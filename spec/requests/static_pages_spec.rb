@@ -1,11 +1,26 @@
 require 'spec_helper'
 
-describe "StaticPages" do
-  describe "GET /static_pages" do
-    it "works! (now write some real specs)" do
-      # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-      get static_pages_index_path
-      response.status.should be(200)
-    end
+describe "Static Pages" do
+
+  subject { page }
+
+  describe "About page" do
+    before { visit "/static_pages/about" }
+    it { should have_content 'Welcome to ccCultura' }
+  end
+
+  describe "Follow page" do
+    before { visit "/static_pages/follow" }
+    it { should have_content 'Follow ccCultura' }
+  end
+
+  describe "Contribute page" do
+    before { visit "/static_pages/contribute" }
+    it { should have_content 'ccContribute' }
+  end
+
+  describe "Links page" do
+    before { visit "/static_pages/links" }
+    it { should have_content "Links & Source Material" }
   end
 end
