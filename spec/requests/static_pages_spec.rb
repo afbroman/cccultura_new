@@ -5,7 +5,7 @@ describe "Static Pages" do
   subject { page }
 
   describe "About page" do
-    before { visit "/about" }
+    before { visit root_path }
     it { should have_content 'Welcome to ccCultura' }
     it { should have_selector('title', text: "ccCultura | About") }
   end

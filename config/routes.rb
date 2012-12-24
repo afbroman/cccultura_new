@@ -1,4 +1,6 @@
 CcculturaNew::Application.routes.draw do
+  root to: 'static_pages#about'
+
   match '/about', to: 'static_pages#about'
   match '/follow', to: 'static_pages#follow'
   match '/contribute', to: 'static_pages#contribute'
