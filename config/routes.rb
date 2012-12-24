@@ -1,11 +1,8 @@
 CcculturaNew::Application.routes.draw do
-  get "static_pages/about"
-
-  get "static_pages/follow"
-
-  get "static_pages/contribute"
-
-  get "static_pages/links"
+  match '/about', to: 'static_pages#about'
+  match '/follow', to: 'static_pages#follow'
+  match '/contribute', to: 'static_pages#contribute'
+  match '/links', to: 'static_pages#links'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
