@@ -1,3 +1,345 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*
+  title: ccCultura main Cascading Style Sheet
+  URI: http://cccultura.com/css/main.css
+  creator: Giso Broman
+  date: 2012-05-05
+  license: http://creativecommons.org/licenses/by-nc-sa/3.0/
+*/
+
+$headerColor: #d2e8f9;
+$footerColor: #f9d2e8;
+$mainColor: #e8f9d2;
+
+.APAcredit, .directory { /* Used for long URLs in "References" section */  
+  word-wrap: break-word;
+}
+
+/*-----------------------------------------------*/
+/*                            PAGE LEVEL ELEMENTS*/
+html {
+  color: #111;
+  background-color: #dfdfdf;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2em;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+#container {
+  width: 90%;
+  min-width: 830px;
+  margin: 0 auto;
+  background-color: white;
+}
+#header {
+  color: #111;
+  background-color: headerColor;
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+  padding: 0.3em 0 0.3em 0;
+}
+#navigation {
+  margin: 0 0 0.5em 0;
+}
+#banner {
+  width: 100%;
+  height: auto;
+}
+#main {
+  padding: 2em 0 1em 0;
+  float: left;
+  width: 62%;
+  min-width: 520px;
+  border-right: 1px solid #aaa;
+  background-color: $mainColor;
+}
+#sidebar {
+  padding: 2em 10px 0 0;
+  float: right;
+  width: 33%;
+}
+#footer {
+  clear: both;
+  text-align: center;
+  border-top: 1px solid #aaa;
+  line-height: 1.3em;
+  padding: 0.4em 3em 2em 3em;
+  background-color: $footerColor;
+}
+/*-----------------------------------------------*/
+/*                SIDEBAR MAPS AND PHOTO ELEMENTS*/
+.logo {
+  width: 96%;
+  padding-bottom: 3px;
+}
+.photo {
+  width: 96%;
+  padding-bottom: 3px;
+}
+iframe {
+  border: 0;
+  margin: 1em 0 0 0;
+  width: 96%;
+  height: 350px;
+  padding-bottom: 3px;
+}
+.small_icon { /*  Icons used on social media page*/
+  height: 1em;
+}
+/*-----------------------------------------------*/
+/*                                ANCHOR ELEMENTS*/
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #1f27c1;
+}
+a:visited {
+  color: #1f27c1;
+}
+a:hover {
+  color: #111;
+  background-color: $footerColor;
+  text-decoration: none;
+}
+#header a:hover {
+  background-color: headerColor;
+  color: #c1681f;
+}
+#footer a:hover {
+  background: #78c11f;
+}
+.miniMenu a:hover {
+  background-color: $mainColor;
+  color: #c1681f;
+}
+.returnTop a {
+  color: #c1681f;
+}
+.returnTop a:hover {
+  color: $mainColor;
+  background-color: #1f27c1;
+}
+.lettermark { /*  Marks the A-Z lists along left */
+  margin-left: 3px;
+  color: #c1681f;
+  font-family: "Lucida Sans", Verdana, Helvetica, sans-serif;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+a.lettermark {
+  color: #c1681f;
+  background-color: $mainColor;
+  text-decoration: none;
+}
+/*-----------------------------------------------*/
+/*                              HEADLINE ELEMENTS*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lucida Sans", Verdana, Helvetica, sans-serif;
+  font-weight: bold;
+}
+h1 {
+  font-size: 2em;
+  line-height: 2em;
+}
+h2 {
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+h3 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+#main h2, #main h3 {
+  background: #78c11f;
+  color: #111;
+  text-align: center;
+  margin: 0 7px 0 7px;
+  padding: 4px 7px;
+}
+h4 {
+  text-indent: 6em;
+  margin-bottom: 3px;
+  margin-top: 1em;
+  font-size: 1em;
+  line-height: 1em;
+  font-style: italic;
+}
+/*-----------------------------------------------*/
+/*                                  LIST ELEMENTS*/
+ul, dl {
+  list-style-type: none;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+dl.directory dt {
+  text-indent: 40px;
+  margin-top: 0.4em;
+}
+dl.directory dd {
+  text-indent: 40px;
+  margin-bottom: 0.5em;
+}
+/*-----------------------------------------------*/
+/*                          MISC PARAGRAPH STYLES*/
+.directory p {
+  margin: 0;
+}
+.tagList {
+  text-indent: 9em;
+  margin: 0;
+}
+p {
+  margin: 0.5em 7px 0.5em 7px;
+  line-height: 1.2em;
+  text-indent: 40px;
+  font-size: 1em;
+  padding-left: 7px;
+  margin-right: 14px;
+}
+p.center {
+  text-indent: 0;
+  line-height: 1.2em;
+  text-align: center;
+  font-size: 1em;
+}
+#footer p {
+  text-indent: 0;
+}
+.dividerNote {
+  margin-top: 0.5em;
+  padding-top: 7px;
+  padding-left: 14px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 14px;
+  line-height: 1.2em;
+  font-size: 1em;
+  border-top: 1px solid #aaa;
+  text-indent: 40px;
+}
+.dropDown {
+  text-align: center;
+  padding-top: 0.6em;
+}
+.dropDown select {
+  width: 410px;
+  margin-bottom: 2em;
+}
+.returnTop {
+  text-align: right;
+  color: #c1681f;
+  margin: 0 2em 0 0;
+}
+.portuguese {
+  font-style: italic;
+}
+.update {
+  text-align: right;
+  color: #c1681f;
+  margin: 0 2em 0 0;
+}
+.miniMenu {
+  font-family: "Lucida Sans", Verdana, Helvetica, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  text-indent: 0;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+#notice {
+  color: red;
+}
+/*-----------------------------------------------*/
+/*                       SOURCE CITATION ELEMENTS*/
+.APAcredit {
+  font-size: 8pt;
+  font-family: "Lucida Console", Courier, monospace;
+}
+#footer p, #notice, .credit, .update, .returnTop {
+  font-size: 0.7em;
+  font-family: "Lucida Sans", Verdana, Helvetica, sans-serif;
+}
+.sourceNote {
+  border-top: 1px solid #aaa;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 10pt;
+  line-height: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.5em;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 7px;
+  text-align: center;
+  text-decoration: underline;
+  text-indent: 0;
+}
+.APAcredit {
+  text-align: left;
+  margin-left: 3em;
+  margin-top: 1em;
+  padding-bottom: 0.5em;
+  text-indent: -2.3em;
+}
+.sourceTitle {
+  font-style: italic;
+}
+.credit {
+  text-align: left;
+  padding-bottom: 2em;
+  text-indent: -2.3em;
+  margin-left: 18px;
+  margin-right: 14px;
+}
+/*-----------------------------------------------*/
+/*                                 TABLE ELEMENTS*/
+#contributeForm {
+  width: 98%;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2em;
+  padding-left: 7px;
+}
+#contributeForm td {
+  font-size: 1em;
+}
+table {
+  line-height: 1.3em;
+  table-layout: fixed;
+  width: 98%;
+  margin-left: 5px;
+  font-family: "Lucida Sans", Verdana, Helvetica, sans-serif;
+}
+.col1 {                        /*left hand column*/
+  text-align: right;
+  text-indent: 0.7em;
+  font-weight: bold;
+}
+.col2 {                       /*right hand column*/
+  text-indent: 0.7em;
+  text-align: left;
+}
+th {                                 /*header row*/
+  font-size: 1em;
+  font-weight: bold;
+  background: #c1b91f;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+td {                                 /*other rows*/
+  font-size: 0.8em;
+}
+/*-----------------------------------------------*/

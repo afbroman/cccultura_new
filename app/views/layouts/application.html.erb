@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8" />
   <title>ccCultura | <%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="container">
+    <div id="header">
+      <%= image_tag("_banner.png", alt: "Skyline banner", title: "ccCultura.com/sp/ A Directory of Museums &amp; Cultural Institutions in São Paulo") %>
+      <h3 id="navigation"><%= link_to('main directory', '#') %> · <%= link_to('about', root_path) %> · <%= link_to('follow', follow_path) %> · <%= link_to('contribute', contribute_path) %> · <%= link_to('other links', links_path) %></h3>
+    </div>
 
-<%= yield %>
+    <%= yield %>
+
+    <div id="footer">
+        <p>Banner artwork source information: The <a href="http://www.flickr.com/photos/things-i-like-in-sp/3516885722/sizes/l/in/photostream/">original photo</a> of São Paulo used in the banner was taken by Alexandre Giesbrecht (<a href="http://www.flickr.com/photos/things-i-like-in-sp/">Flickr</a>) and is also licensed under a CC&nbsp;license&nbsp;(<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC&nbsp;BY&#8209;SA&nbsp;2.0</a>). Both the CC logo (source: <a href="http://mirrors.creativecommons.org/presskit/icons/cc.svg">creativecommons.org</a>) and the museum image (source: <a href="http://www.clker.com/cliparts/2/P/Z/Y/O/i/institution-icon-md.png">clker.com</a>) are in the <a href="http://en.wikipedia.org/wiki/Public_domain">public domain</a>.</p>
+        <p>Some rights reserved 2012. This site and the original banner artwork were created by <a href="http://www.giso6150.com">Giso Broman</a> and are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+      </div><!-- end of "footer"-->
+
+    </div><!-- end of "container"-->
 
 </body>
 </html>
