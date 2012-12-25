@@ -27,4 +27,16 @@ describe "Static Pages" do
     it { should have_content "Links & Source Material" }
     it { should have_selector('title', text: "ccCultura | Links") }
   end
+
+  it "should have the right links on the layout" do
+    visit root_path
+    click_link 'follow'
+    page.should have_selector 'title', text: 'ccCultura | Follow'
+    click_link 'contribute'
+    page.should have_selector 'title', text: 'ccCultura | Contribute'
+    click_link 'other links'
+    page.should have_selector 'title', text: 'ccCultura | Links'
+    click_link 'about'
+    page.should have_selector 'title', text: 'ccCultura | About'
+  end
 end
