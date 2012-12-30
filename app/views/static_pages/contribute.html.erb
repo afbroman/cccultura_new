@@ -1,4 +1,59 @@
 <% provide(:title, 'Contribute') %>
+<div id="main">
+  <h2>ccContribute</h2>
+  <p>To provide a correction, update or other comment or suggestion, please use the form below or send an email to <a href="mailto:cccultura.com@gmail.com">cccultura.com@gmail.com</a>. When applicable, please refer to the specific page or institution in question.
+  <h3>ccContribuir</h3>
+  <p>Mande por favor qualquer dúvida, correção ou crítica no endereço <a href="mailto:cccultura.com@gmail.com">cccultura.com@gmail.com</a> ou através da forma abaixo. Quando aplicável, refira-se a uma página ou instituição específica.</p>
+  <p class="dividerNote">Fill in all fields / Preencha todas as lacunas:</p>
+  <p id="notice">This function of the website has not yet been fully developed. (2012-05-05)</p>
 
-<h1>ccContribute</h1>
-<p>Find me in app/views/static_pages/contribute.html.erb</p>
+  <form name="htmlform" method="post" action="html_form_send.php">
+    <table id="contributeForm">
+      <tr>
+        <td valign="top">
+          <label for="user_name">Your Name / Seu Nome</label>
+        </td>
+        <td valign="top">
+          <input type="text" id="user_name" maxlength="50" size="30">
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+          <label for="web_addr">Web Page / Página</label>
+        </td>
+        <td valign="top">
+          <input type="text" id="web_addr" maxlength="50" size="30">
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <label for="email">Email</label>
+        </td>
+        <td valign="top">
+          <input type="text" id="email" maxlength="80" size="30">
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <label for="comments">Comments / Comentários</label>
+        </td>
+        <td valign="top">
+          <textarea id="comments" cols="30" rows="6"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:right">
+          <input type="submit" value="Submit / Enviar">
+        </td>
+      </tr>
+    </table>
+  </form>
+  <p class="sourceNote">Source:</p>
+  <p class="APAcredit">The php form used above was adapted from open source code available at <a href="http://www.freecontactform.com/html_form.php">http://www.freecontactform.com/html_form.php</a>.</p>
+  <p class="update">Last update: 2012-04-15</p>
+</div><!-- end of "main" -->
+
+<div id="sidebar">
+  <%= image_tag("_contribute1.jpg", class: "photo", alt: "São Paulo traffic at night", title: "Avenida 23 de Maio") %><p class="credit">Avenida 23 de Maio (source: <%= link_to "Wikimedia Commons", "http://pt.wikipedia.org/wiki/Ficheiro:23_de_Maio.jpg" %>)</p>
+</div><!-- end of "sidebar"-->
