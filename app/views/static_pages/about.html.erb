@@ -1,4 +1,18 @@
 <% provide(:title, 'About') %>
 
-<h1>Welcome to ccCultura</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<div id="main">
+  <h2>Welcome to ccCultura</h2>
+  <p>The objective of this site is to provide speakers of English with basic information about cultural institutions in the city of São Paulo, Brazil. Although there is a wealth of information online about São Paulo’s museums, research institutions, theaters, etc., uncovering these resources can prove to be overwhelming for those who do not speak Portuguese. This directory incorporates information from the institutions themselves, from government and cultural organizations documents, and from sources that are licenced through <a href="http://creativecommons.org/about">Creative Commons</a>.</p>
+  <h3>About São Paulo</h3>
+  <p>One of the largest cities in the world, with roughly twenty million inhabitants in its metropolitan area, São Paulo is poorly understood outside of South America. São Paulo is generally recognized as Brazil’s capital of industry and finance, but, for many, little is known about the rich cultural landscape of the city. The area’s <a href="http://en.wikipedia.org/wiki/S%C3%A3o_Paulo#History" title="Wikipedia">rapid industrialization</a> during the first half of the twentieth century fueled a parallel expansion in the local cultural community. Many of the city’s dozens of cultural institutions rank as the oldest and/or largest in Brazil.</p>
+  <p>Besides the many presitigious museums, libraries, and performing arts centers in São Paulo, there are also many high-profile cultural events which draw tourists and scholars from all over the world. From the world’s largest <a href="http://en.wikipedia.org/wiki/S%C3%A3o_Paulo_Gay_Pride_Parade" title="Wikipedia">gay pride parade</a> to the annual <a href="http://en.wikipedia.org/wiki/Brazilian_Grand_Prix" title="Wikipedia">Brazilian Grand Prix</a> and <a href="http://en.wikipedia.org/wiki/S%C3%A3o_Paulo_Fashion_Week" title="Wikipedia">São Paulo Fashion Week (SPFW)</a>, the <span class="portuguese">paulistano</span> cultural offerings are truly diverse.</p>
+  <h3>ccSources</h3>
+  <p>The information used to create this site is documented as thoroughly as possible and, whenever possible, preference has been given to material with a Creative Commons license or that is in the public domain. Clearly labeled links accompany all copyrighted material. Community-based sites such as <a href="http://www.flickr.com/creativecommons/">Flickr</a>, <a href="http://commons.wikimedia.org/wiki/Commons:Welcome">Wikipedia</a>, and <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> are the basis for much of this site’s content, but key facts have been verified with published sources as appropriate.</p>
+  <p>In this spirit, your contribution is a vital aspect of this project and is always appreciated. Please <a href="contribute.html">report any errors, omissions, or other ideas</a> and help to build this resource for all who wish to learn more about the amazing city of São Paulo.</p>
+  <p class="update">Last update: 2012-04-15</p>
+</div><!-- end of "main" -->
+
+<div id="sidebar">
+  <%= image_tag("_about1.jpg", alt: "Museu Paulista", title: "Museu Paulista", class: "photo") %><p class="credit">Museu Paulista (source: <a href="http://www.flickr.com/photos/giso6150/5874392479/">Flickr</a>)</p>
+  <%= image_tag("_about2.jpg", alt: "Museu Afro Brasil", title: "Museu Afro Brasil", class: "photo") %><p class="credit">Museu Afro Brasil (source: <a href="http://www.flickr.com/photos/jorgebrazil/6322091776/">Flickr</a>)</p>
+</div><!-- end of "sidebar"-->
